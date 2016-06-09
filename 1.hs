@@ -1,12 +1,10 @@
 -- find the last element in a list
 
-l = [1..10]
+-- method 1 - using last function
 
--- method 1
+lastEl list = last list
 
-lastEl = last l
-
--- method 2
+-- method 2 - recursive
 
 lastEl' [xs] = xs
 lastEl' (_:xs) = lastEl' xs  
