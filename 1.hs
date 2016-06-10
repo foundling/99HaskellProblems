@@ -2,6 +2,7 @@
 
 -- method 1 - using last function
 
+lastEl :: [x] = x
 lastEl list = last list
 
 -- method 2 - recursive
