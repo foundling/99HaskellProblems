@@ -1,12 +1,5 @@
--- find the last element in a list
-
--- method 1 - using last function
-
-lastEl :: [x] = x
-lastEl list = last list
-
--- method 2 - recursive
-
-lastEl' [xs] = xs
-lastEl' (_:xs) = lastEl' xs  
-
+myLast xs = last xs 
+myLast' xs = xs !! (length xs - 1)
+myLast'' [x] = x
+myLast''' (_:xs) = myLast'' xs
+myLast'''' xs = reverse xs !! 0 
